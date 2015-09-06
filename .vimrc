@@ -20,6 +20,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'bling/vim-airline'
 Plugin 'jordwalke/flatlandia'
 Plugin 'kien/ctrlp.vim'
+Plugin 'fatih/vim-go'
+Plugin 'raimondi/delimitmate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
