@@ -1,4 +1,40 @@
-execute pathogen#infect()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'bling/vim-airline'
+Plugin 'jordwalke/flatlandia'
+Plugin 'kien/ctrlp.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
@@ -15,16 +51,7 @@ let g:airline#extensions#branch#enabled = 1
 
 " global settings
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
-syntax off
-set background=light
+syntax on  
+set background=dark
 
-" Commenting blocks of code.
-" autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
-" autocmd FileType sh,ruby,python   let b:comment_leader = '# '
-" autocmd FileType conf,fstab       let b:comment_leader = '# '
-" autocmd FileType tex              let b:comment_leader = '% '
-" autocmd FileType mail             let b:comment_leader = '> '
-" autocmd FileType vim              let b:comment_leader = '" '
-" noremap <silent> ,cc :<C-B>silent
-" <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
-" noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+colorscheme flatlandia
