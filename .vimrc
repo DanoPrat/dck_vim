@@ -21,7 +21,8 @@ Plugin 'bling/vim-airline'
 Plugin 'jordwalke/flatlandia'
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
-Plugin 'raimondi/delimitmate'
+" Plugin 'raimondi/delimitmate'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,6 +51,9 @@ filetype plugin on
 " airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
+
+" delimitMate
+let delimitMate_expand_cr=1
 
 " global settings
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
