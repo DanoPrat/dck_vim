@@ -18,11 +18,13 @@ Plugin 'tpope/vim-fugitive'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'bling/vim-airline'
-Plugin 'jordwalke/flatlandia'
+" Plugin 'vylight'
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
 " Plugin 'raimondi/delimitmate'
 Plugin 'leafgarland/typescript-vim'
+
+Plugin 'reedes/vim-colors-pencil'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -55,9 +57,13 @@ let g:airline#extensions#branch#enabled = 1
 " delimitMate
 let delimitMate_expand_cr=1
 
+" vim-go
+
 " global settings
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 syntax on  
-set background=dark
+set background=light
+"let &colorcolumn=join(range(81,81),",")
 
-colorscheme flatlandia
+" highlight Normal ctermfg=black ctermbg=white
+colorscheme bw

@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/daniel/projects/src/github.com/danck/hawai-suitecrm'
+let g:netrw_dirhist_2='/home/daniel/projects/src/github.com/danck/hawai-suitecrm/order'
+let g:netrw_dirhist_3='/home/daniel/projects/src/github.com/danck/hawai-suitecrm'
+let g:netrw_dirhist_4='/home/daniel/projects/src/github.com/danck/hawai-suitecrm/order'
+let g:netrw_dirhist_5='/home/daniel/uni/mi/sample-apps/correlation'
+let g:netrw_dirhist_6='/home/daniel/projects/src/github.com/danck/hawai-suitecrm'
+let g:netrw_dirhist_7='/home/daniel/projects/src/github.com/danck/hawai-suitecrm/customer'
+let g:netrw_dirhist_8='/home/daniel/projects/src/github.com/danck/hawai-suitecrm'
+let g:netrw_dirhist_9='/home/daniel/projects/src/github.com/danck/hawai-suitecrm/customer'
